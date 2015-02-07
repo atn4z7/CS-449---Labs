@@ -15,6 +15,8 @@
 		BCB2D62B1A75E11100A95BD8 /* Lab_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2D62A1A75E11100A95BD8 /* Lab_1Tests.swift */; };
 		BCB878731A85B5A50036AFFD /* infoBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB878721A85B5A50036AFFD /* infoBtn.png */; };
 		BCB878751A85B61E0036AFFD /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB878741A85B61E0036AFFD /* refresh.png */; };
+		BCB878771A85E5D10036AFFD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB878761A85E5D10036AFFD /* SettingsViewController.swift */; };
+		BCB878791A85EB570036AFFD /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB878781A85EB570036AFFD /* settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		BCB2D62A1A75E11100A95BD8 /* Lab_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_1Tests.swift; sourceTree = "<group>"; };
 		BCB878721A85B5A50036AFFD /* infoBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infoBtn.png; sourceTree = "<group>"; };
 		BCB878741A85B61E0036AFFD /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		BCB878761A85E5D10036AFFD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BCB878781A85EB570036AFFD /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				BCB2D61B1A75E11100A95BD8 /* Images.xcassets */,
 				BCB2D61D1A75E11100A95BD8 /* LaunchScreen.xib */,
 				BCB2D6121A75E11000A95BD8 /* Supporting Files */,
+				BCB878761A85E5D10036AFFD /* SettingsViewController.swift */,
 			);
 			path = "Lab 1";
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				BCB878741A85B61E0036AFFD /* refresh.png */,
+				BCB878781A85EB570036AFFD /* settings.png */,
 				BCB878721A85B5A50036AFFD /* infoBtn.png */,
 			);
 			name = Resources;
@@ -210,6 +216,7 @@
 				BCB2D61F1A75E11100A95BD8 /* LaunchScreen.xib in Resources */,
 				BCB878751A85B61E0036AFFD /* refresh.png in Resources */,
 				BCB878731A85B5A50036AFFD /* infoBtn.png in Resources */,
+				BCB878791A85EB570036AFFD /* settings.png in Resources */,
 				BCB2D61C1A75E11100A95BD8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +237,7 @@
 			files = (
 				BCB2D6171A75E11000A95BD8 /* ViewController.swift in Sources */,
 				BCB2D6151A75E11000A95BD8 /* AppDelegate.swift in Sources */,
+				BCB878771A85E5D10036AFFD /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lab 1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lab 1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
