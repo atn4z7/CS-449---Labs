@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--About-->
         <scene sceneID="2Sm-D6-koX">
             <objects>
                 <viewController id="mPr-nl-jhm" sceneMemberID="viewController">
@@ -15,14 +15,26 @@
                     <view key="view" contentMode="scaleToFill" id="atU-cH-8nj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Umpire Buddy by An Nguyen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="un5-rc-rxf">
+                                <rect key="frame" x="141" y="99" width="319" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="un5-rc-rxf" secondAttribute="centerX" id="g5f-KF-LwP"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="About" id="qnE-vR-B5Y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9Y-Ka-UkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859" y="-991"/>
+            <point key="canvasLocation" x="843" y="-1043"/>
         </scene>
-        <!--View Controller-->
+        <!--Umpire Buddy-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Lab_1" sceneMemberID="viewController">
@@ -34,44 +46,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbV-uU-5Ao">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbV-uU-5Ao">
                                 <rect key="frame" x="280" y="285" width="40" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
                                 <state key="normal" title="Strike">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="IncreaseStrike" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lRP-EP-2RE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPR-Fz-CsT">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPR-Fz-CsT">
                                 <rect key="frame" x="285" y="356" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
                                 <state key="normal" title="Ball">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="IncreaseBall" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AMO-Ps-sPl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jr-YA-2d3">
-                                <rect key="frame" x="356" y="120" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Strike :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf8-Bh-Vv4">
+                                <rect key="frame" x="238" y="131" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strike :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf8-Bh-Vv4">
-                                <rect key="frame" x="273" y="120" width="54" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ball :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQH-C5-npW">
+                                <rect key="frame" x="253" y="206" width="39" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ball :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQH-C5-npW">
-                                <rect key="frame" x="288" y="195" width="39" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yO-5q-fp2">
+                                <rect key="frame" x="321" y="206" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yO-5q-fp2">
-                                <rect key="frame" x="356" y="195" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total outs:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ4-Rv-fQr">
+                                <rect key="frame" x="232" y="459" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jr-YA-2d3">
+                                <rect key="frame" x="321" y="131" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQl-xV-aGF">
+                                <rect key="frame" x="327" y="459" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -80,23 +109,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pbV-uU-5Ao" firstAttribute="centerX" secondItem="uPR-Fz-CsT" secondAttribute="centerX" id="0eP-yB-uzR"/>
+                            <constraint firstItem="HQl-xV-aGF" firstAttribute="leading" secondItem="hQ4-Rv-fQr" secondAttribute="trailing" constant="15" id="8Vm-aU-fcS"/>
                             <constraint firstItem="6yO-5q-fp2" firstAttribute="top" secondItem="7jr-YA-2d3" secondAttribute="bottom" constant="54" id="9Ks-sY-axk"/>
-                            <constraint firstItem="pbV-uU-5Ao" firstAttribute="top" secondItem="hQH-C5-npW" secondAttribute="bottom" constant="69" id="9ze-qM-s7Q"/>
+                            <constraint firstItem="pbV-uU-5Ao" firstAttribute="top" secondItem="hQH-C5-npW" secondAttribute="bottom" constant="58" id="9ze-qM-s7Q"/>
                             <constraint firstItem="pbV-uU-5Ao" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="C5A-Z9-zhs"/>
                             <constraint firstItem="uPR-Fz-CsT" firstAttribute="top" secondItem="pbV-uU-5Ao" secondAttribute="bottom" constant="41" id="CNM-Fv-cNx"/>
                             <constraint firstItem="6yO-5q-fp2" firstAttribute="leading" secondItem="7jr-YA-2d3" secondAttribute="leading" id="CXG-tN-US3"/>
+                            <constraint firstItem="hQ4-Rv-fQr" firstAttribute="top" secondItem="uPR-Fz-CsT" secondAttribute="bottom" constant="73" id="H5Y-Yr-Dgv"/>
                             <constraint firstItem="pf8-Bh-Vv4" firstAttribute="leading" secondItem="hQH-C5-npW" secondAttribute="leading" constant="-15" id="Z0s-8C-2D9"/>
                             <constraint firstItem="7jr-YA-2d3" firstAttribute="leading" secondItem="pf8-Bh-Vv4" secondAttribute="trailing" constant="29" id="f4L-bC-B0m"/>
                             <constraint firstItem="7jr-YA-2d3" firstAttribute="baseline" secondItem="pf8-Bh-Vv4" secondAttribute="baseline" id="kYt-Gb-5VE"/>
-                            <constraint firstItem="pbV-uU-5Ao" firstAttribute="centerX" secondItem="pf8-Bh-Vv4" secondAttribute="centerX" id="lw2-JZ-hUZ"/>
+                            <constraint firstItem="pbV-uU-5Ao" firstAttribute="centerX" secondItem="pf8-Bh-Vv4" secondAttribute="centerX" constant="35" id="lw2-JZ-hUZ"/>
+                            <constraint firstItem="hQ4-Rv-fQr" firstAttribute="centerX" secondItem="hQH-C5-npW" secondAttribute="centerX" id="oZO-e0-kuR"/>
+                            <constraint firstItem="HQl-xV-aGF" firstAttribute="centerY" secondItem="hQ4-Rv-fQr" secondAttribute="centerY" id="okq-PH-zyd"/>
                             <constraint firstItem="6yO-5q-fp2" firstAttribute="baseline" secondItem="hQH-C5-npW" secondAttribute="baseline" id="pen-bO-QVW"/>
                             <constraint firstItem="pbV-uU-5Ao" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ttd-zB-B0Z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="oGa-A9-Xfc"/>
+                    <navigationItem key="navigationItem" title="Umpire Buddy" id="oGa-A9-Xfc"/>
                     <connections>
                         <outlet property="Ball" destination="6yO-5q-fp2" id="rhm-ry-x4W"/>
+                        <outlet property="BallBtn" destination="uPR-Fz-CsT" id="9Ky-Zy-QVc"/>
+                        <outlet property="OutLbl" destination="HQl-xV-aGF" id="Mva-ma-jfz"/>
                         <outlet property="Strike" destination="7jr-YA-2d3" id="ZyU-7E-tWh"/>
+                        <outlet property="StrikeBtn" destination="pbV-uU-5Ao" id="v9G-r8-7X7"/>
+                        <segue destination="mPr-nl-jhm" kind="show" identifier="showAbout" id="6If-H8-PVJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

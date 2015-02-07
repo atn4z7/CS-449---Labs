@@ -13,6 +13,8 @@
 		BCB2D61C1A75E11100A95BD8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB2D61B1A75E11100A95BD8 /* Images.xcassets */; };
 		BCB2D61F1A75E11100A95BD8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB2D61D1A75E11100A95BD8 /* LaunchScreen.xib */; };
 		BCB2D62B1A75E11100A95BD8 /* Lab_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2D62A1A75E11100A95BD8 /* Lab_1Tests.swift */; };
+		BCB878731A85B5A50036AFFD /* infoBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB878721A85B5A50036AFFD /* infoBtn.png */; };
+		BCB878751A85B61E0036AFFD /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB878741A85B61E0036AFFD /* refresh.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		BCB2D6241A75E11100A95BD8 /* Lab 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lab 1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB2D6291A75E11100A95BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB2D62A1A75E11100A95BD8 /* Lab_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_1Tests.swift; sourceTree = "<group>"; };
+		BCB878721A85B5A50036AFFD /* infoBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infoBtn.png; sourceTree = "<group>"; };
+		BCB878741A85B61E0036AFFD /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		BCB2D6111A75E11000A95BD8 /* Lab 1 */ = {
 			isa = PBXGroup;
 			children = (
+				BCB8786D1A85AD940036AFFD /* Resources */,
 				BCB2D6141A75E11000A95BD8 /* AppDelegate.swift */,
 				BCB2D6161A75E11000A95BD8 /* ViewController.swift */,
 				BCB2D6181A75E11000A95BD8 /* Main.storyboard */,
@@ -110,6 +115,15 @@
 				BCB2D6291A75E11100A95BD8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCB8786D1A85AD940036AFFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCB878741A85B61E0036AFFD /* refresh.png */,
+				BCB878721A85B5A50036AFFD /* infoBtn.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +208,8 @@
 			files = (
 				BCB2D61A1A75E11000A95BD8 /* Main.storyboard in Resources */,
 				BCB2D61F1A75E11100A95BD8 /* LaunchScreen.xib in Resources */,
+				BCB878751A85B61E0036AFFD /* refresh.png in Resources */,
+				BCB878731A85B5A50036AFFD /* infoBtn.png in Resources */,
 				BCB2D61C1A75E11100A95BD8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
