@@ -32,19 +32,59 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="24" y="146" width="543" height="92"/>
+                                    <mask key="constraints">
+                                        <exclude reference="dMn-7o-zJJ"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="V7U-oX-kUY" firstAttribute="centerX" secondItem="Gck-nl-spC" secondAttribute="centerX" id="23c-1X-bRg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TEF-Aq-eTh" secondAttribute="trailing" constant="18" id="5Fk-rd-vtQ"/>
+                            <constraint firstItem="TEF-Aq-eTh" firstAttribute="top" secondItem="DCP-QV-1CZ" secondAttribute="bottom" constant="82" id="DGZ-sq-G26"/>
+                            <constraint firstItem="did-Jn-r3p" firstAttribute="top" secondItem="TEF-Aq-eTh" secondAttribute="bottom" constant="162" id="Nme-hw-qlp"/>
                             <constraint firstItem="did-Jn-r3p" firstAttribute="top" secondItem="V7U-oX-kUY" secondAttribute="bottom" constant="335" id="PbD-DE-Sqs"/>
+                            <constraint firstItem="did-Jn-r3p" firstAttribute="top" secondItem="V7U-oX-kUY" secondAttribute="bottom" constant="135" id="VlG-ht-WcU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TEF-Aq-eTh" secondAttribute="trailing" constant="18" id="Vnj-OH-VEW"/>
                             <constraint firstItem="V7U-oX-kUY" firstAttribute="top" secondItem="TEF-Aq-eTh" secondAttribute="bottom" constant="-4" id="b9v-Xh-5r0"/>
                             <constraint firstItem="TEF-Aq-eTh" firstAttribute="leading" secondItem="Gck-nl-spC" secondAttribute="leadingMargin" constant="7" id="dp6-2Z-UXK"/>
                             <constraint firstItem="V7U-oX-kUY" firstAttribute="top" secondItem="TEF-Aq-eTh" secondAttribute="bottom" constant="-4" id="g5p-53-4AH"/>
                             <constraint firstItem="TEF-Aq-eTh" firstAttribute="top" secondItem="DCP-QV-1CZ" secondAttribute="bottom" constant="82" id="p95-A7-PNC"/>
                             <constraint firstItem="V7U-oX-kUY" firstAttribute="top" secondItem="DCP-QV-1CZ" secondAttribute="bottom" constant="170" id="tkb-yV-Qp4"/>
+                            <constraint firstItem="V7U-oX-kUY" firstAttribute="centerX" secondItem="Gck-nl-spC" secondAttribute="centerX" id="uTb-mM-l4z"/>
+                            <constraint firstItem="TEF-Aq-eTh" firstAttribute="leading" secondItem="Gck-nl-spC" secondAttribute="leadingMargin" constant="7" id="zza-uE-pmb"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5Fk-rd-vtQ"/>
+                                <exclude reference="DGZ-sq-G26"/>
+                                <exclude reference="zza-uE-pmb"/>
+                                <exclude reference="uTb-mM-l4z"/>
+                                <exclude reference="Nme-hw-qlp"/>
+                                <exclude reference="VlG-ht-WcU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="5Fk-rd-vtQ"/>
+                                <include reference="DGZ-sq-G26"/>
+                                <exclude reference="Vnj-OH-VEW"/>
+                                <exclude reference="dp6-2Z-UXK"/>
+                                <exclude reference="p95-A7-PNC"/>
+                                <include reference="zza-uE-pmb"/>
+                                <exclude reference="23c-1X-bRg"/>
+                                <exclude reference="b9v-Xh-5r0"/>
+                                <exclude reference="g5p-53-4AH"/>
+                                <exclude reference="tkb-yV-Qp4"/>
+                                <include reference="uTb-mM-l4z"/>
+                                <include reference="Nme-hw-qlp"/>
+                                <exclude reference="PbD-DE-Sqs"/>
+                                <include reference="VlG-ht-WcU"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="F6J-ZT-AWf"/>
                     <connections>
@@ -163,6 +203,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="pbV-uU-5Ao" firstAttribute="centerX" secondItem="uPR-Fz-CsT" secondAttribute="centerX" id="0eP-yB-uzR">
                                 <variation key="heightClass=compact" constant="-90.5"/>
@@ -203,6 +244,9 @@
                                 <variation key="heightClass=compact" constant="-41"/>
                             </constraint>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="uaq-b9-O98" appends="YES" id="hFJ-VT-55U"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Umpire Buddy" id="oGa-A9-Xfc"/>
                     <connections>
@@ -216,6 +260,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="uaq-b9-O98">
+                    <connections>
+                        <action selector="handleGesture:" destination="vXZ-lx-hvc" id="pDK-Rk-6X7"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="855" y="-261"/>
         </scene>

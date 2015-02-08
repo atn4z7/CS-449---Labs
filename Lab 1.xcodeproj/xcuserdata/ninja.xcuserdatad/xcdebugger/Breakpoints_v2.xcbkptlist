@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab 1/ViewController.swift"
-            timestampString = "444987698.306328"
+            timestampString = "445050605.031589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "IncreaseStrike()"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab 1/ViewController.swift"
-            timestampString = "444987698.306328"
+            timestampString = "445050605.031589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "alert(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -102,11 +102,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab 1/ViewController.swift"
-            timestampString = "444987698.306328"
+            timestampString = "445050605.031589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "alert(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -118,11 +118,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab 1/ViewController.swift"
-            timestampString = "444987128.334004"
+            timestampString = "445050605.031589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "speak(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -140,6 +140,22 @@
             startingLineNumber = "28"
             endingLineNumber = "28"
             landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab 1/ViewController.swift"
+            timestampString = "445050605.031589"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "handleGesture(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

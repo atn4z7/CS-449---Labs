@@ -43,8 +43,10 @@ class SettingsViewController: UIViewController, UIAlertViewDelegate {
     //function to handle switch value changes
     @IBAction func valueChanged() {
         if ttsSwitch.on {
+            //if user enabled the switch
             NSUserDefaults.standardUserDefaults().setBool(true,forKey: "TTS")
         } else {
+            //if user disabled the switch
             NSUserDefaults.standardUserDefaults().setBool(false,forKey: "TTS")
         }
         NSUserDefaults.standardUserDefaults().synchronize()

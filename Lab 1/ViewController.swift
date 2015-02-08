@@ -23,6 +23,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
     @IBOutlet var BallBtn: UIButton!
     @IBOutlet var StrikeBtn: UIButton!
     
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -65,6 +66,41 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         self.navigationItem.rightBarButtonItems = buttons;
         
     }
+    
+    //func to handle long press
+    //Steps:
+    //Call becomeFirstResponder() before getting sharedMenuController
+    //Call menu.setMenuVisible(true, animated: true) at the end
+    //Override the canBecomeFirstResponder function
+    //Override the canPerformAction function
+    //Write the function for the selector
+    @IBAction func handleGesture(sender: AnyObject) {
+        if sender.state == UIGestureRecognizerState.Began
+        {
+            becomeFirstResponder()
+            var menu = UIMenuController.sharedMenuController()
+            var strikeItem = UIMenuItem(title: "Strike", action: Selector("IncreaseStrike"))
+            var ballItem = UIMenuItem(title: "Ball", action: Selector("IncreaseBall"))
+            
+            menu.menuItems = [strikeItem,ballItem]
+            menu.setTargetRect(CGRectMake(100, 80, 50, 50), inView: self.view)
+            menu.setMenuVisible(true, animated: true)
+        }
+    }
+    
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
+    override func canPerformAction(action: Selector, withSender sender: AnyObject?) -> Bool {
+        if action == Selector("IncreaseStrike") {
+            return true
+        }
+        else if action == Selector("IncreaseBall") {
+            return true
+        }
+        return false
+    }
+    
     //function to get number of out from NSUserDefaults
     func getOuts(){
         if let Outs:AnyObject = NSUserDefaults.standardUserDefaults().objectForKey("outs") {
