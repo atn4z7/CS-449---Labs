@@ -10,7 +10,8 @@
 - tool bar: reset (reset all counts), settings (go to settings screen), about (go to about screen)
 - long press contextual menu
 
-![](http://g.recordit.co/UclVcKN1k8.gif)
+![](http://imgur.com/yts5gSX)
 
 ####Alternative Method to go to About screen
 ![](http://g.recordit.co/ZOsgKbkaeU.gif)
+
