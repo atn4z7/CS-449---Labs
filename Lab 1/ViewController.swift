@@ -140,7 +140,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         if (TTS!){
             speak(name)
         }
-        //if this is out, then increment number of out
+        //if this is out, then increment number of out and save it
         if (name == "Out!"){
             outs = outs + 1
             NSUserDefaults.standardUserDefaults().setInteger(outs, forKey: "outs")
