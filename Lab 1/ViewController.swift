@@ -53,7 +53,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         
        
         // create home, reset, and settings buttons
-        var homeBtn = UIBarButtonItem(image: UIImage(named: "infoBtn.png"), style: .Plain, target: self, action: "gotoHome")
+        var aboutBtn = UIBarButtonItem(image: UIImage(named: "infoBtn.png"), style: .Plain, target: self, action: "gotoAbout")
         var resetBtn = UIBarButtonItem(image: UIImage(named: "refresh.png"), style: .Plain, target: self, action: "reset")
         var settingsBtn = UIBarButtonItem(image: UIImage(named: "settings.png"), style: .Plain, target: self, action: "gotoSettings")
 
@@ -61,7 +61,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         var spaceBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FixedSpace, target: nil, action: nil)
         spaceBtn.width = 2;
         
-        var buttons: [UIBarButtonItem] = [homeBtn,spaceBtn, settingsBtn, spaceBtn,resetBtn];
+        var buttons: [UIBarButtonItem] = [aboutBtn,spaceBtn, settingsBtn, spaceBtn,resetBtn];
         //add bar buttons to navigation bar
         self.navigationItem.rightBarButtonItems = buttons;
         
@@ -207,12 +207,33 @@ class ViewController: UIViewController, UIAlertViewDelegate {
     }
     
     //function to go to About screen
-    func gotoHome(){
+    func gotoAbout(){
         
         self.performSegueWithIdentifier("showAbout", sender: self)
+        
+        //alternative method to go to about screen
+        //showing an action sheet (kind of a overflow menu) and choose go to about action
+        /*
+        let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
+        let aboutAction = UIAlertAction(title: "About", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            println("going to about screen")
+            self.performSegueWithIdentifier("showAbout", sender: self)
+        })
 
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
+            (alert: UIAlertAction!) -> Void in
+            println("Cancelled")
+        })
+  
+        optionMenu.addAction(aboutAction)
+        optionMenu.addAction(cancelAction)
+
+        self.presentViewController(optionMenu, animated: true, completion: nil)
+        */
+        
     }
-    
+ 
     //function to go to Settings screen
     func gotoSettings(){
         
