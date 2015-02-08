@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab 1/ViewController.swift"
-            timestampString = "445056353.25023"
+            timestampString = "445056975.334945"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
             landmarkName = "IncreaseStrike()"
             landmarkType = "5">
          </BreakpointContent>

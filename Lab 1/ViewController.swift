@@ -67,7 +67,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         
     }
     
-    //func to handle long press
+    //function to handle long press
     //Steps:
     //Call becomeFirstResponder() before getting sharedMenuController
     //Call menu.setMenuVisible(true, animated: true) at the end
