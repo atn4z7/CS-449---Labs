@@ -125,7 +125,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
-    //func to speak a string
+    //function to speak a string
     func speak(text : NSString){
         var mySpeechSynthesizer:AVSpeechSynthesizer = AVSpeechSynthesizer()
         var mySpeechUtterance:AVSpeechUtterance = AVSpeechUtterance(string:text)
