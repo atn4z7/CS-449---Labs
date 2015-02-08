@@ -11,3 +11,6 @@
 - long press contextual menu
 
 ![](http://g.recordit.co/UclVcKN1k8.gif)
+
+####Alternative Method to go to About screen
+![](http://g.recordit.co/ZOsgKbkaeU.gif)
