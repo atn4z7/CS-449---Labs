@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC711BDE1AAD22F300796369 /* lab2.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC711BDC1AAD22F300796369 /* lab2.gif */; };
+		BC711BDF1AAD22F300796369 /* lab1.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC711BDD1AAD22F300796369 /* lab1.gif */; };
 		BCB2D6151A75E11000A95BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2D6141A75E11000A95BD8 /* AppDelegate.swift */; };
 		BCB2D6171A75E11000A95BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2D6161A75E11000A95BD8 /* ViewController.swift */; };
 		BCB2D61A1A75E11000A95BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB2D6181A75E11000A95BD8 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC711BDC1AAD22F300796369 /* lab2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lab2.gif; sourceTree = "<group>"; };
+		BC711BDD1AAD22F300796369 /* lab1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lab1.gif; sourceTree = "<group>"; };
 		BCB2D60F1A75E11000A95BD8 /* Lab 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB2D6131A75E11000A95BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB2D6141A75E11000A95BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC711BD71AAD22D500796369 /* screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				BC711BDC1AAD22F300796369 /* lab2.gif */,
+				BC711BDD1AAD22F300796369 /* lab1.gif */,
+			);
+			path = screenshot;
+			sourceTree = "<group>";
+		};
 		BCB2D6061A75E11000A95BD8 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,7 @@
 		BCB2D6111A75E11000A95BD8 /* Lab 1 */ = {
 			isa = PBXGroup;
 			children = (
+				BC711BD71AAD22D500796369 /* screenshot */,
 				BCB8786D1A85AD940036AFFD /* Resources */,
 				BCB2D6141A75E11000A95BD8 /* AppDelegate.swift */,
 				BCB2D6161A75E11000A95BD8 /* ViewController.swift */,
@@ -213,8 +227,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCB2D61A1A75E11000A95BD8 /* Main.storyboard in Resources */,
+				BC711BDE1AAD22F300796369 /* lab2.gif in Resources */,
 				BCB2D61F1A75E11100A95BD8 /* LaunchScreen.xib in Resources */,
 				BCB878751A85B61E0036AFFD /* refresh.png in Resources */,
+				BC711BDF1AAD22F300796369 /* lab1.gif in Resources */,
 				BCB878731A85B5A50036AFFD /* infoBtn.png in Resources */,
 				BCB878791A85EB570036AFFD /* settings.png in Resources */,
 				BCB2D61C1A75E11100A95BD8 /* Images.xcassets in Resources */,
